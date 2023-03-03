@@ -1,6 +1,7 @@
 package homework1;
 
 public class RevertWords {
+
     private static final String EXAMPLE_STRING = "Let it be! Let it be! Let it be! Let it be! whisper words of wisdom let it be";
 
     public static void main(String[] args) {
