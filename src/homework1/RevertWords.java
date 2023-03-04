@@ -2,20 +2,23 @@ package homework1;
 
 public class RevertWords {
 
-    private static final String EXAMPLE_STRING = "Let it be! Let it be! Let it be! Let it be! whisper words of wisdom let it be";
-
     public static void main(String[] args) {
-        System.out.println(reverseString(EXAMPLE_STRING));
+        String s1 = "Let it be! Let it be! Let it be! Let it be! whisper words of wisdom let it be";
+        System.out.println(reverseString(s1));
     }
 
-    private static StringBuilder reverseString(String s) {
+    private static String reverseString(String s) {
         String[] wordsFromExampleString = s.split(" ");
+        reversArray(wordsFromExampleString);
+        return String.join(" ", wordsFromExampleString);
+    }
 
-        StringBuilder resultString = new StringBuilder();
-        int numberOfWords = wordsFromExampleString.length;
-        for (int i = 0; i < numberOfWords; i++) {
-            resultString.append(wordsFromExampleString[numberOfWords - 1 - i]).append(" ");
+    private static void reversArray(String[] s) {
+        String temp;
+        for (int i = 0; i < s.length / 2; i++) {
+            temp = s[i];
+            s[i] = s[s.length - 1 - i];
+            s[s.length - 1 - i] = temp;
         }
-        return resultString;
     }
 }
