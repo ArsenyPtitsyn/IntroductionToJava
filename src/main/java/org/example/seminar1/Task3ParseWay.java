@@ -1,6 +1,7 @@
-package seminar1;
+package org.example.seminar1;
 
 public class Task3ParseWay {
+
     public static void main(String[] args) {
         String a =   "11000111010101110";
         String b = "1000001111100111011";

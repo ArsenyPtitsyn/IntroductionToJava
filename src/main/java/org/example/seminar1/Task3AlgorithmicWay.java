@@ -1,6 +1,7 @@
-package seminar1;
+package org.example.seminar1;
 
 public class Task3AlgorithmicWay {
+
     public static void main(String[] args) {
         String a =    "1000111110";
         String b = "1110111010111";

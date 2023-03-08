@@ -1,6 +1,7 @@
-package seminar1;
+package org.example.seminar1;
 
 public class Task1 {
+
     public static void main(String[] args) {
         String s = "Hello   world. This is  my  first program";
         System.out.println(reverseString(s));
